@@ -72,11 +72,7 @@ with col4:
         delta="+3.4%"
     )
 
-st.markdown("---")
-if prediction[0] == 1:
-    st.metric(
-        "Risk Level",
-        "🔴 HIGH"
+
     )
 else:
     st.metric(
