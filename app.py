@@ -26,22 +26,7 @@ if st.button('Predict'):
         st.progress(int(p*100))
         st.write(f'Churn Probability: {p*100:.2f}%')
     st.success('Customer Will Not Churn' if pred==0 else 'Customer Will Churn')
-    from PIL import Image
-
-logo = Image.open("bank_logo.png")
-
-col1, col2 = st.columns([1,5])
-
-with col1:
-    st.image(logo, width=90)
-
-with col2:
-    st.markdown("""
-    # 🏦 Customer Churn Prediction
-    ### AI Powered Banking Analytics
-    """)
-    st.markdown("---")
-
+  
 st.markdown("""
 <div style="
 background-color:#0F172A;
