@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from PIL import Image
 st.set_page_config(page_title='Customer Churn Prediction',page_icon='🏦',layout='wide')
 model=joblib.load('model.pkl')
 st.title('🏦 Customer Churn Prediction')
